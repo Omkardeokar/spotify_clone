@@ -1,0 +1,186 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@700&family=Poppins:wght@400;500;600&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box ;
+  font-family: "Poppins", sans-serif;
+  ;
+}
+body{
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(120deg,#a4ff80, #70ff37);
+  height: 100vh;
+  overflow: hidden;
+  
+}
+.center{
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 400px;
+  background: #191414;
+  border-radius: 40px;
+  box-shadow: 10px 10px 15px #1db954;
+  border-color: black;
+  
+}
+.center h1{
+  border-radius: 10px;
+  background-color: #1ed760;
+  text-align: center;
+  padding: 20px 0;
+  color: #000000;
+  border-width: 3px;
+  border-bottom: 1px solid rgb(255, 255, 255);
+}
+.center form{
+  padding: 0 40px;
+  box-sizing: border-box;
+}
+form .txt_field{
+  position: relative;
+  border-bottom: 2px solid #ffffff;
+  margin: 30px 0;
+}
+.txt_field input{
+  color: #ffffff;
+  width: 100%;
+  padding: 0 5px;
+  height: 40px;
+  font-size: 16px;
+  border: none;
+  background: none;
+  outline: none;
+}
+.txt_field label{
+  position: absolute;
+  top: 50%;
+  left: 5px;
+  color: #adadad;
+  transform: translateY(-50%);
+  font-size: 16px;
+  pointer-events: none;
+  transition: .5s;
+}
+.txt_field span::before{
+  content: '';
+  position: absolute;
+  top: 40px;
+  left: 0;
+  width: 0%;
+  height: 2px;
+  background: #2691d9;
+  transition: .5s;
+}
+.txt_field input:focus ~ label,
+.txt_field input:valid ~ label{
+  top: -5px;
+  color: #daeaf5;
+}
+.txt_field input:focus ~ span::before,
+.txt_field input:valid ~ span::before{
+  width: 100%;
+}
+.pass{
+  margin: -5px 0 20px 5px;
+  color: #a6a6a6;
+  cursor: pointer;
+}
+.pass:hover{
+  text-decoration: underline;
+}
+
+.signup_link{
+  margin: 30px 0;
+  text-align: center;
+  font-size: 16px;
+  color: #666666;
+}
+.signup_link a{
+  color: #2691d9;
+  text-decoration: none;
+}
+.signup_link a:hover{
+  text-decoration: underline;
+}
+.login{
+    color: #cdffbc;
+    position: relative;
+    width: 50%;
+    height: 50px;
+    border: 1px solid;
+    padding: 15px 0;
+    text-align: center; 
+    margin: 20px 10px;
+    font-weight: bold;
+    background: #1ed760;
+    cursor: pointer;
+    overflow: hidden;
+    text-transform: uppercase;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 33%;
+    margin-left: 25%;
+    border-radius: 25px
+    
+  
+    
+  }
+  span{
+      background: #cdffbc;
+      height: 100%;
+      width: 0;
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      z-index: -1;
+      transition: 0.5s;
+  }
+  .login:hover{
+    border-color: #ffffff;
+    transition: .5s;
+  }
+  .login {
+    color: #000000;
+  }
+  nav{
+    font-family: 'Ubuntu', sans-serif;
+}
+
+nav ul{
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+    height: 40px;
+    background-color: black;
+    color: white;
+}
+
+nav ul li{
+    padding: 1px;
+}
+.brand img{
+    width: 44px;
+    padding: 0 8px;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  font-weight: bolder;
+  font-size: 1.3rem;
+}
+.copyright_folder{
+  position: relative;
+  color: #fff;
+  bottom: 0;
+  width: 100%;
+  background-color: black;
+  line-height: 3;
+  font-size: medium;
+  text-align: center;
+  font-weight: bold   ;
+}
